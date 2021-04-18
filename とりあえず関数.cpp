@@ -2,14 +2,16 @@
 //まあそれはおいおいやってみようと思います
 include <iostream>
 using namespace std;
-int main(){
-  int num(int a,int b){
-    a=100;
-    b=80;
-    
-   　return(a+b);
+int num(int a,int b){
+  int num=a;
+  if(num<b) num=b;
+  return num;
   }
-  return 0;
+int main(){
+  int a,b;
+  a=30;
+  b=60;
+  cout<<"最大値は"<<num(a,b)<<'\n';
 }
 
 //簡単な関数の例題を作ってみました。関数はreturn文を使って引数を表示するんですな。あと、関数の宣言の形を覚えておかないと...
